@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>20/10 – Món quà Ngày Phụ nữ Việt Nam</title>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;600&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#4a1a36;--soft:#7a3a58;--accent:#d93f72;--gold:#c98a3a;--script:'Dancing Script','Segoe Script',cursive;--sans:'Be Vietnam Pro',system-ui,-apple-system,'Segoe UI',sans-serif;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+html,body{height:100%;margin:0}
+*{box-sizing:border-box}
+body{font-family:var(--sans);color:var(--ink);overflow:hidden;background:radial-gradient(60% 50% at 12% 8%,#ffdbe6,transparent 70%),radial-gradient(55% 45% at 92% 18%,#ffeccf,transparent 70%),radial-gradient(60% 55% at 85% 96%,#e6f3d8,transparent 70%),#fff7f2}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:#fff3ee}
+.blob{position:fixed;border-radius:50%;filter:blur(60px);opacity:.55;z-index:0;animation:drift 16s ease-in-out infinite alternate}
+.b1{width:50vmax;height:50vmax;left:-15vmax;top:-10vmax;background:#ffc4d6}
+.b2{width:42vmax;height:42vmax;right:-12vmax;bottom:-8vmax;background:#ffe3b8;animation-delay:-6s}
+@keyframes drift{to{transform:translate(6vmax,4vmax) scale(1.12)}}
+#fx{position:fixed;inset:0;z-index:4;pointer-events:none}
+.screen{position:fixed;inset:0;z-index:2;display:none;align-items:center;justify-content:center;flex-direction:column;padding:24px;text-align:center}
+.screen.show{display:flex;animation:fade .8s}
+@keyframes fade{from{opacity:0}}
+.script{font-family:var(--script);font-weight:700}
+h1.script{font-size:clamp(2.8rem,11vw,5rem);margin:.1em 0;line-height:1.1;color:var(--accent)}
+p.sub{font-weight:300;font-size:clamp(1rem,3.8vw,1.2rem);color:var(--soft);margin:.4em auto 1.2em;max-width:30em;line-height:1.7}
+input{font:700 clamp(1.7rem,7vw,2.3rem) var(--script);width:min(86vw,340px);padding:8px 10px;border:0;border-bottom:2px solid rgba(217,63,114,.55);background:transparent;color:var(--ink);text-align:center;outline:none}
+input::placeholder{color:#c99aae;font-weight:600}
+input.bad{animation:shake .4s;border-bottom-color:#e0203f}
+@keyframes shake{25%{transform:translateX(-9px)}75%{transform:translateX(9px)}}
+.btn{font:600 1rem var(--sans);cursor:pointer;border:0;border-radius:50px;padding:14px 34px;color:#fff;background:linear-gradient(135deg,#f0508a,#ff8a5c);box-shadow:0 8px 22px rgba(240,80,138,.35);transition:.25s;margin:10px 4px 0}
+.btn:hover{transform:translateY(-2px) scale(1.04)}
+.btn.ghost{background:rgba(255,255,255,.6);color:var(--accent);box-shadow:none;border:1.5px solid rgba(217,63,114,.5)}
+.spin{animation:rot 6s linear infinite,pulse 2s ease-in-out infinite;margin-bottom:14px}
+@keyframes rot{to{transform:rotate(360deg)}}
+@keyframes pulse{50%{scale:1.12}}
+#deck{position:fixed;inset:0;z-index:2;display:none}
+#deck.show{display:block}
+.slide{position:absolute;inset:0;display:flex;overflow-x:hidden;overflow-y:auto;padding:calc(env(safe-area-inset-top,0px) + 18px) 20px calc(96px + env(safe-area-inset-bottom,0px));opacity:0;pointer-events:none;transform:scale(.97);transition:opacity .8s,transform .8s}
+.slide.active{opacity:1;pointer-events:auto;transform:none}
+.in{margin:auto;width:100%;max-width:640px;text-align:center;text-shadow:0 0 14px rgba(255,255,255,.9)}
+.r{opacity:0;transform:translateY(26px)}
+.active .r{animation:up 1s cubic-bezier(.2,.8,.2,1) var(--d,0s) forwards}
+@keyframes up{to{opacity:1;transform:none}}
+.tag{display:inline-block;letter-spacing:.3em;font-size:.78rem;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:6px}
+.big{font-family:var(--script);font-weight:700;font-size:clamp(4.5rem,24vw,9rem);line-height:1;margin:0;background:linear-gradient(180deg,#f0508a,#ff8a5c);-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:none;filter:drop-shadow(0 4px 12px rgba(240,80,138,.25))}
+h2.script{font-size:clamp(2.1rem,8.5vw,3.3rem);margin:0 0 .4em;color:var(--accent);line-height:1.15}
+.div{display:block;margin:0 auto 18px;width:170px;height:22px}
+.tl{margin:0 0 22px}
+.tl b{display:block;font-family:var(--script);font-size:2.3rem;color:var(--gold);line-height:1.1}
+.tl span{display:block;line-height:1.75;font-size:clamp(1rem,3.9vw,1.15rem)}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:24px 14px;margin-top:10px}
+.ico{width:64px;height:64px;display:block;margin:0 auto 4px;filter:drop-shadow(0 6px 10px rgba(240,80,138,.3));animation:fy 3.6s ease-in-out infinite alternate}
+@keyframes fy{to{transform:translateY(-5px)}}
+.grid h3{margin:.1em 0;font-family:var(--script);font-size:1.9rem;color:var(--accent)}
+.grid p{margin:0;font-size:.95rem;line-height:1.6;color:var(--soft)}
+.chips{display:flex;flex-wrap:wrap;gap:20px 26px;justify-content:center;margin-top:22px}
+.chips div{width:96px;font-size:.95rem;color:var(--soft)}
+.quote{font-size:clamp(1.05rem,4vw,1.3rem);line-height:1.85}
+.to{font-size:.85rem;letter-spacing:.25em;text-transform:uppercase;color:var(--gold);font-weight:600}
+.name{font-family:var(--script);font-weight:700;font-size:clamp(2.6rem,12vw,4.6rem);color:var(--accent);line-height:1.15;margin:.05em 0 .3em;word-break:break-word}
+#wish{min-height:14em}
+#wish p{margin:.8em 0;line-height:1.9;font-size:clamp(1.02rem,4vw,1.2rem)}
+#wish p:last-child{font-weight:600;color:var(--accent)}
+.caret::after{content:"|";margin-left:2px;color:var(--accent);animation:bl .7s steps(1) infinite}
+@keyframes bl{50%{opacity:0}}
+.bq{width:min(80vw,390px);margin:0 auto;display:block;overflow:visible;filter:drop-shadow(0 14px 18px rgba(120,30,60,.2))}
+.bq.sm{width:min(56vw,250px)}
+.bloom{transform-box:fill-box;transform-origin:50% 60%;opacity:0;transform:scale(0) rotate(-40deg)}
+.active .bloom{animation:bloom 1.2s cubic-bezier(.2,1.4,.4,1) var(--d) forwards}
+@keyframes bloom{to{opacity:1;transform:scale(1) rotate(0)}}
+.stem{fill:none;stroke:#3f8f58;stroke-width:4.5;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:1}
+.active .stem{animation:draw 1.2s ease var(--d) forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+.sway{animation:sway 5s ease-in-out infinite alternate;transform-origin:50% 100%}
+@keyframes sway{to{transform:rotate(1.5deg)}}
+.tw{transform-box:fill-box;transform-origin:center;animation:tw 2s ease-in-out infinite}
+@keyframes tw{50%{opacity:.2;transform:scale(.5)}}
+/* cảnh */
+.sc{width:min(92vw,520px);display:block;margin:6px auto 12px;filter:drop-shadow(0 14px 22px rgba(217,63,114,.25))}
+.rays{transform-origin:200px 130px;animation:rot 50s linear infinite}
+.cl1{animation:dr 14s ease-in-out infinite alternate}.cl2{animation:dr 18s ease-in-out infinite alternate-reverse}
+@keyframes dr{to{transform:translateX(46px)}}
+.fl{animation:sw 3s ease-in-out infinite alternate}
+@keyframes sw{from{transform:rotate(-5deg)}to{transform:rotate(5deg)}}
+.bl{animation:bob 5s ease-in-out infinite alternate}
+@keyframes bob{to{transform:translateY(-12px)}}
+.bunt{width:min(96vw,560px);display:block;margin:0 auto}
+.fg{animation:sw 2.2s ease-in-out infinite alternate}
+.row{display:flex;justify-content:center;align-items:flex-end;margin:4px 0 6px}
+.row .bq{width:min(31vw,190px);margin:0 -2vw;filter:hue-rotate(-28deg) drop-shadow(0 12px 14px rgba(120,30,60,.22))}
+.row .bq:nth-child(2){width:min(38vw,230px);z-index:1;filter:drop-shadow(0 12px 14px rgba(120,30,60,.22))}
+.row .bq:nth-child(3){filter:hue-rotate(38deg) drop-shadow(0 12px 14px rgba(120,30,60,.22))}
+/* màn cuối */
+.slide.end{overflow:hidden;background:linear-gradient(180deg,#ffc3d9 0%,#ffdcd0 50%,#fff3df 100%)}
+.tree{position:absolute;inset:0;width:100%;height:100%;z-index:0}
+.active .tree{animation:fade 1.6s}
+.cb{animation:cw 4.5s ease-in-out infinite}
+@keyframes cw{0%,100%{transform:translate(-5px,2px) rotate(-3deg)}50%{transform:translate(6px,-3px) rotate(3deg)}}
+.slide.end .in{margin:0 auto auto;position:relative;z-index:2}
+.wv{position:absolute;left:0;bottom:0;width:200%;height:24vh;z-index:1;animation:wv 12s linear infinite}
+.w2{height:19vh;bottom:-1vh;animation-duration:8s;animation-direction:reverse}
+.w3{height:13vh;bottom:-1vh;animation-duration:6s}
+@keyframes wv{to{transform:translateX(-50%)}}
+.endbtn{position:absolute;left:0;right:0;bottom:calc(76px + env(safe-area-inset-bottom,0px));z-index:3;text-align:center}
+#bar{position:fixed;left:0;top:env(safe-area-inset-top,0px);height:3px;width:0;z-index:31;background:linear-gradient(90deg,#f0508a,#ffb25c)}
+#bar.run{animation:pb 10s linear forwards}
+@keyframes pb{to{width:100%}}
+#mu{position:fixed;z-index:40;right:14px;top:calc(env(safe-area-inset-top,0px) + 12px);width:42px;height:42px;border-radius:50%;border:1.5px solid rgba(217,63,114,.35);background:rgba(255,255,255,.7);display:none;place-items:center;cursor:pointer;color:var(--accent);padding:0}
+#mu.show{display:grid}#mu .sl{display:none}#mu.off .sl{display:block}
+#nav{position:fixed;z-index:5;left:0;right:0;bottom:0;padding:12px 16px calc(14px + env(safe-area-inset-bottom,0px));display:none;align-items:center;justify-content:space-between}
+#nav.show{display:flex}
+#nav button{width:46px;height:46px;border-radius:50%;border:1.5px solid rgba(217,63,114,.35);background:rgba(255,255,255,.65);color:var(--accent);font-size:1.4rem;cursor:pointer}
+#nav button:disabled{opacity:.25;cursor:default}
+#dots{display:flex;gap:7px}
+#dots i{width:8px;height:8px;border-radius:50%;background:rgba(217,63,114,.25);transition:.3s}
+#dots i.on{width:24px;border-radius:8px;background:var(--accent)}
+@media(prefers-reduced-motion:reduce){.blob,.sway,.rays,.cl1,.cl2,.fl,.bl,.wv,.cb,.fg{animation:none}}
+</style>
+</head>
+<body>
+<div class="blob b1"></div><div class="blob b2"></div>
+<canvas id="fx"></canvas><div id="bar"></div>
+<button id="mu" aria-label="Bật hoặc tắt nhạc"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9v6h4l5 4V5L8 9z" fill="currentColor"/><path d="M16.5 8.5a5 5 0 0 1 0 7M19 6a8.5 8.5 0 0 1 0 12"/><path class="sl" d="M3 3L21 21"/></svg></button>
+<svg width="0" height="0" style="position:absolute"><defs id="defs"></defs></svg>
+
+<div class="screen show" id="intro">
+  <svg class="sway" width="96" height="96"><use href="#r0"/></svg>
+  <h1 class="script">Quà tặng 20/10</h1>
+  <p class="sub">Một món quà nhỏ dành cho người phụ nữ đặc biệt.<br>Hãy bật âm thanh để nghe bản nhạc nhẹ nhàng, và cho mình biết tên bạn nhé!</p>
+  <input id="nm" type="text" maxlength="24" placeholder="Nhập tên của bạn" autocomplete="off">
+  <button class="btn" id="go">Mở quà</button>
+</div>
+
+<div class="screen" id="load">
+  <svg class="spin" width="92" height="92"><use href="#r5"/></svg>
+  <p class="script" style="font-size:2rem;margin:0;color:var(--accent)" id="lt"></p>
+</div>
+
+<div id="deck">
+  <section class="slide"><div class="in">
+    <div class="r tag" style="--d:.2s">Ngày 20 tháng 10</div>
+    <div class="r big" style="--d:.4s">20/10</div>
+    <h2 class="r script" style="--d:.7s;margin-bottom:0">Ngày Phụ nữ Việt Nam</h2>
+    <div id="b1" class="r" style="--d:.9s;margin-top:8px"></div>
+    <p class="r sub" style="--d:1.2s;margin-top:.4em">Một món quà nhỏ gửi tới <b class="nm" style="color:var(--accent)"></b></p>
+  </div></section>
+
+  <section class="slide"><div class="in">
+    <div class="r tag" style="--d:.1s">Câu chuyện</div>
+    <h2 class="r script" style="--d:.3s">Vì sao có ngày 20/10?</h2>
+    <svg class="r div" style="--d:.5s" data-div></svg>
+    <div class="r tl" style="--d:.9s"><b>1930</b><span>Ngày 20/10/1930, Hội Phụ nữ Phản đế – tiền thân của Hội Liên hiệp Phụ nữ Việt Nam – ra đời, mở đầu cho truyền thống đáng tự hào của phụ nữ nước ta.</span></div>
+    <div class="r tl" style="--d:1.8s"><b>Từ đó</b><span>20/10 trở thành ngày truyền thống để cả xã hội cùng nhìn lại và tri ân những đóng góp thầm lặng lẫn rực rỡ của phụ nữ.</span></div>
+    <div class="r tl" style="--d:2.7s"><b>Hôm nay</b><span>Đó là ngày của những lời cảm ơn, những bó hoa và những cái ôm dành cho mẹ, bà, chị, em, bạn bè và người thương.</span></div>
+  </div></section>
+
+  <section class="slide"><div class="in">
+    <div class="r tag" style="--d:.1s">Hình ảnh người phụ nữ Việt Nam</div>
+    <h2 class="r script" style="--d:.3s">Bốn đức tính tỏa sáng</h2>
+    <div class="grid">
+      <div class="r" style="--d:.7s"><span data-i="star"></span><h3>Anh hùng</h3><p>Dám đứng lên vì Tổ quốc, vì những điều tốt đẹp</p></div>
+      <div class="r" style="--d:1.4s"><span data-i="flame"></span><h3>Bất khuất</h3><p>Mềm mại nhưng không bao giờ gục ngã</p></div>
+      <div class="r" style="--d:2.1s"><span data-i="heart"></span><h3>Trung hậu</h3><p>Sống chân thành, thủy chung, giàu lòng nhân ái</p></div>
+      <div class="r" style="--d:2.8s"><span data-i="house"></span><h3>Đảm đang</h3><p>Giữ lửa cho gia đình và gánh vác cả bầu trời</p></div>
+    </div>
+  </div></section>
+
+  <section class="slide"><div class="in">
+    <div class="r tag" style="--d:.1s">Sáng 20/10</div>
+    <h2 class="r script" style="--d:.3s">Một buổi sáng rực rỡ</h2>
+    <div id="sc1" class="r" style="--d:.6s"></div>
+    <p class="r sub" style="--d:1.2s;margin-bottom:0">Nắng lên, cánh đồng hoa thức dậy, và bầu trời hôm nay nhuộm màu của những lời chúc.</p>
+  </div></section>
+
+  <section class="slide"><div class="in">
+    <div class="r tag" style="--d:.1s">Phố hoa ngày hội</div>
+    <h2 class="r script" style="--d:.3s">Cả phố đều thơm hương hoa</h2>
+    <div id="sc2" class="r" style="--d:.6s"></div>
+    <p class="r sub" style="--d:1.4s;margin-bottom:0">Những gian hàng đầy hoa, tiếng cười rộn ràng và tin nhắn “chúc mừng” nhảy liên tục trên điện thoại.</p>
+  </div></section>
+
+  <section class="slide"><div class="in">
+    <div class="r tag" style="--d:.1s">Món quà của ngày hôm nay</div>
+    <h2 class="r script" style="--d:.3s">Không cần quá lớn lao</h2>
+    <p class="r quote" style="--d:.8s">Đôi khi chỉ cần một bông hồng, một lời chúc chân thành<br>cũng đủ làm trái tim ấm lên cả ngày dài.</p>
+    <div class="chips">
+      <div class="r" style="--d:1.6s"><span data-i="rose"></span>Một bông hoa</div>
+      <div class="r" style="--d:2.1s"><span data-i="mail"></span>Một lời chúc</div>
+      <div class="r" style="--d:2.6s"><span data-i="heart"></span>Một cái ôm</div>
+      <div class="r" style="--d:3.1s"><span data-i="smile"></span>Một nụ cười</div>
+    </div>
+    <p class="r quote" style="--d:3.9s;margin-top:26px;color:var(--accent);font-family:var(--script);font-size:1.7rem;font-weight:700">Và hôm nay, mình xin gửi riêng tới bạn…</p>
+  </div></section>
+
+  <section class="slide"><div class="in">
+    <div class="r to" style="--d:.1s">Gửi tới bạn nữ</div>
+    <div class="r name nm" style="--d:.4s"></div>
+    <svg class="r div" style="--d:.7s" data-div></svg>
+    <div id="wish"></div>
+  </div></section>
+
+  <section class="slide"><div class="in">
+    <div class="r tag" style="--d:.1s">Chúc mừng ngày 20/10</div>
+    <h2 class="r script" style="--d:.3s;font-size:clamp(2.4rem,10vw,4rem);margin-bottom:0">Luôn rạng rỡ nhé,</h2>
+    <div class="r name nm" style="--d:.6s"></div>
+    <div id="b2" class="r" style="--d:.8s"></div>
+  </div></section>
+
+  <section class="slide end">
+    <svg class="tree" id="tree" viewBox="-30 0 460 700" preserveAspectRatio="xMidYMax slice"></svg>
+    <div class="in"><div class="r tag" style="--d:.2s">Hẹn gặp lại</div>
+      <h2 class="r script" style="--d:.5s;margin-bottom:0">Cảm ơn vì đã là bạn</h2>
+      <div class="r name nm" style="--d:.9s"></div>
+      <p class="r sub" style="--d:1.3s;margin:0 auto">Chạm vào màn hình để rải thêm cánh hoa anh đào</p></div>
+    <div class="endbtn r" style="--d:2s"><button class="btn" id="again">Xem lại</button><button class="btn ghost" id="other">Tặng người khác</button></div>
+  </section>
+</div>
+
+<div id="nav"><button id="pv" aria-label="Trước">‹</button><div id="dots"></div><button id="nx" aria-label="Sau">›</button></div>
+
+<script>
+const $=s=>document.querySelector(s),rnd=Math.random;
+const mix=(a,b,t)=>{const f=h=>[1,3,5].map(i=>parseInt(h.substr(i,2),16)),x=f(a),y=f(b);return'#'+x.map((v,i)=>Math.round(v+(y[i]-v)*t).toString(16).padStart(2,'0')).join('')};
+/* Hoa hồng nhiều lớp */
+const RC=['#e63960','#f78fb3','#f6b042','#b57edc','#ff7a59','#ee5a9b','#f7c6d2'];
+const PETAL='M0 0C-24-4-34-28-16-46C-6-54 6-54 16-46C34-28 24-4 0 0Z';
+function mkRose(i,c){
+  const lt=mix(c,'#ffffff',.5),dk=mix(c,'#4a0a28',.5);
+  let h=`<radialGradient id="g${i}" cx=".5" cy="1" r="1.1"><stop offset="0" stop-color="${dk}"/><stop offset=".5" stop-color="${c}"/><stop offset="1" stop-color="${lt}"/></radialGradient><symbol id="r${i}" viewBox="-56 -56 112 112">`;
+  [[5,72,0,1],[5,72,36,.78],[5,72,10,.56],[4,90,20,.38],[3,120,5,.2]].forEach(([n,st,off,sc])=>{
+    h+=`<circle r="${sc*42}" fill="${dk}" fill-opacity=".2"/>`;
+    for(let k=0;k<n;k++)h+=`<g transform="rotate(${k*st+off}) scale(${sc})"><path d="${PETAL}" fill="url(#g${i})" stroke="${dk}" stroke-opacity=".4" stroke-width="1"/><path d="M-13-46Q0-55 13-46" fill="none" stroke="#fff" stroke-opacity=".75" stroke-width="2.4" stroke-linecap="round"/><path d="M-3-10Q0-30 4-42" fill="none" stroke="${dk}" stroke-opacity=".18" stroke-width="1.2"/></g>`;
+  });
+  return h+'</symbol>';
+}
+let D='<linearGradient id="ig" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ff9a62"/><stop offset="1" stop-color="#e63a78"/></linearGradient><radialGradient id="bd" cx=".35" cy=".3" r=".9"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#ffd3e2"/></radialGradient><linearGradient id="lg" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#2f7f4c"/><stop offset="1" stop-color="#8fd49a"/></linearGradient><linearGradient id="wr" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff2f5"/><stop offset="1" stop-color="#ffbfd2"/></linearGradient>';
+RC.forEach((c,i)=>D+=mkRose(i,c));
+D+='<symbol id="lf" viewBox="0 -20 54 40"><path d="M0 0C8-16 34-18 52 0C34 18 8 16 0 0Z" fill="url(#lg)" stroke="#1f6b3f" stroke-opacity=".4"/><path d="M2 0H46M14 0l8-8M14 0l8 8M26 0l8-7M26 0l8 7" stroke="#1f6b3f" stroke-opacity=".4" fill="none"/></symbol>';
+$('#defs').innerHTML=D;
+
+/* Bó hoa tươi thắm: lá, 8 bông hồng, hoa nhí, giấy gói, nơ */
+function bouquet(sm){
+  const R=[[200,98,1.35,0,1.6],[122,140,1.1,1,2],[278,140,1.1,2,2.3],[76,206,.95,3,2.6],[324,206,.95,4,2.9],[160,190,1.1,5,3.2],[240,190,1.1,6,3.5],[200,236,1,1,3.8]];
+  let s=`<svg class="bq ${sm?'sm':''}" viewBox="0 0 400 440"><g class="sway">`;
+  for(let k=0;k<16;k++){const t=-170+k*10.5,a=t*Math.PI/180,px=(200+112*Math.cos(a)).toFixed(0),py=(250+135*Math.sin(a)).toFixed(0);
+    s+=`<g class="bloom" style="--d:${1+k*.08}s"><use href="#lf" x="${px}" y="${py-20}" width="54" height="40" transform="rotate(${t+(k%2?8:-8)} ${px} ${py})"/></g>`}
+  R.forEach(([x,y,k,c,d])=>s+=`<path class="stem" pathLength="1" style="--d:${d-1.2}s" d="M200 420Q${(200+x)/2} ${(420+y)/2+20} ${x} ${y+16}"/>`);
+  for(let k=0;k<20;k++){const x=44+(k*61)%312,y=60+(k*43)%170,r=3.4+k%3*1.2;s+=`<g class="bloom" style="--d:${3.4+k*.06}s"><circle cx="${x}" cy="${y}" r="${r}" fill="#fff"/><circle cx="${x}" cy="${y}" r="${r*.35}" fill="#f7b6c8"/></g>`}
+  s+=`<path d="M84 236Q200 270 316 236L236 424H164Z" fill="url(#wr)" stroke="#fff" stroke-opacity=".9" stroke-width="2"/><path d="M128 252L186 422M272 252L214 422" stroke="#f090ae" stroke-opacity=".35" fill="none"/>`;
+  R.forEach(([x,y,k,c,d])=>{const z=92*k;s+=`<g class="bloom" style="--d:${d}s"><use href="#r${c}" x="${x-z/2}" y="${y-z/2}" width="${z}" height="${z}"/></g>`});
+  s+=`<g class="bloom" style="--d:4s"><path d="M92 246Q200 284 308 246L300 266Q200 304 100 266Z" fill="#f0508a" fill-opacity=".9"/><path d="M200 296C158 262 148 312 192 304ZM200 296C242 262 252 312 208 304Z" fill="#ff5d8f" stroke="#c42a64" stroke-opacity=".5"/><path d="M197 304L172 346M203 304L228 346" stroke="#ff5d8f" stroke-width="6" stroke-linecap="round"/><circle cx="200" cy="298" r="9" fill="#ffb25c" stroke="#d9852c" stroke-opacity=".5"/></g>`;
+  [[60,100],[342,92],[110,40],[300,30],[200,20]].forEach(([x,y],k)=>s+=`<g transform="translate(${x} ${y})"><path class="tw" style="animation-delay:-${k*.4}s" d="M0-10Q0 0 10 0Q0 0 0 10Q0 0-10 0Q0 0 0-10Z" fill="#fff" stroke="#ffc46b"/></g>`);
+  return s+'</g></svg>';
+}
+$('#b1').innerHTML=bouquet(1);$('#b2').innerHTML=bouquet(0);
+
+/* Cảnh 1: bình minh trên cánh đồng hoa, bóng bay */
+function scene1(){
+  const C=['#ff5d8f','#ffd23f','#ffffff','#ff9f43','#c77dff','#ff7a9f'];
+  let s='<svg class="sc" viewBox="0 0 400 280"><defs><linearGradient id="sk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe27a"/><stop offset=".55" stop-color="#ffb4a2"/><stop offset="1" stop-color="#ff98c0"/></linearGradient><clipPath id="cp"><rect width="400" height="280" rx="26"/></clipPath></defs><g clip-path="url(#cp)"><rect width="400" height="280" fill="url(#sk)"/><g class="rays">';
+  for(let k=0;k<14;k++){const a=k*.4488,b=a+.14;s+=`<path d="M200 130L${(200+400*Math.cos(a)).toFixed(0)} ${(130+400*Math.sin(a)).toFixed(0)}L${(200+400*Math.cos(b)).toFixed(0)} ${(130+400*Math.sin(b)).toFixed(0)}Z" fill="#fff" fill-opacity=".25"/>`}
+  s+='</g><circle cx="200" cy="130" r="54" fill="#fff" fill-opacity=".35"/><circle cx="200" cy="130" r="38" fill="#fff4b0"/><g class="cl1"><ellipse cx="70" cy="70" rx="34" ry="12" fill="#fff"/><ellipse cx="92" cy="60" rx="22" ry="12" fill="#fff"/></g><g class="cl2"><ellipse cx="300" cy="104" rx="30" ry="10" fill="#fff" fill-opacity=".9"/><ellipse cx="318" cy="95" rx="18" ry="10" fill="#fff"/></g><path d="M0 185Q100 135 200 175T400 165V280H0Z" fill="#a8e0a0"/><path d="M0 215Q120 175 240 210T400 195V280H0Z" fill="#6fc77f"/>';
+  for(let k=0;k<44;k++){const x=8+rnd()*384,y=212+rnd()*62,z=.7+(y-212)/62*.9,c=C[k%6];
+    s+=`<g class="fl" style="transform-origin:${x.toFixed(0)}px ${(y+16*z).toFixed(0)}px;animation-delay:-${(rnd()*3).toFixed(1)}s"><path d="M${x.toFixed(1)} ${(y+16*z).toFixed(1)}V${y.toFixed(1)}" stroke="#2f9e5a" stroke-width="2"/>`;
+    for(let j=0;j<5;j++){const a=j*1.2566;s+=`<circle cx="${(x+Math.cos(a)*4.5*z).toFixed(1)}" cy="${(y+Math.sin(a)*4.5*z).toFixed(1)}" r="${(3.6*z).toFixed(1)}" fill="${c}"/>`}
+    s+=`<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="${(2.4*z).toFixed(1)}" fill="#ffd23f"/></g>`}
+  [[56,70,'#ff5d8f'],[140,42,'#ffd23f'],[270,40,'#ff9f43'],[348,78,'#c77dff'],[214,36,'#ff7a9f']].forEach(([x,y,c],k)=>s+=`<g class="bl" style="animation-delay:-${k*1.1}s"><path d="M${x} ${y+15}Q${x+7} ${y+40} ${x} ${y+64}" stroke="#fff" fill="none" stroke-opacity=".9"/><ellipse cx="${x}" cy="${y}" rx="12" ry="15" fill="${c}"/><ellipse cx="${x-4}" cy="${y-6}" rx="3" ry="5" fill="#fff" fill-opacity=".55"/></g>`);
+  return s+'</g></svg>';
+}
+/* Cảnh 2: phố hoa, cờ hội, ba bó hoa */
+function scene2(){
+  const C=['#ff5d8f','#ffd23f','#7ad7a0','#c77dff','#ff9f43'];
+  let s='<svg class="bunt" viewBox="0 0 400 70"><path d="M0 6Q200 56 400 6" fill="none" stroke="#c98a3a" stroke-width="2"/>';
+  for(let k=0;k<11;k++){const t=(k+.5)/11,x=400*t,y=6*(1-t)**2+112*t*(1-t)+6*t*t;
+    s+=`<path class="fg" style="animation-delay:-${(k*.3).toFixed(1)}s;transform-origin:${x.toFixed(0)}px ${y.toFixed(0)}px" d="M${(x-14).toFixed(0)} ${y.toFixed(0)}L${(x+14).toFixed(0)} ${y.toFixed(0)}L${x.toFixed(0)} ${(y+30).toFixed(0)}Z" fill="${C[k%5]}"/>`}
+  return s+'</svg><div class="row">'+bouquet(0)+bouquet(0)+bouquet(0)+'</div>';
+}
+$('#sc1').innerHTML=scene1();$('#sc2').innerHTML=scene2();
+
+/* Icon dạng huy hiệu có ánh bóng */
+const IC={
+ star:'<path d="M24 4l5.5 13.5L44 18.5 33 28l3.5 14L24 34.5 11.5 42 15 28 4 18.5l14.5-1z"/>',
+ flame:'<path d="M24 3C26 14 38 18 38 30c0 8-7 14-14 14s-14-6-14-14c0-6 4-9 6-14 2 4 4 5 5 4 1-6 1-11 3-17z"/><path d="M24 44c-4 0-7-3-7-7 0-5 5-7 7-13 2 6 7 8 7 13 0 4-3 7-7 7z" fill="#fff" fill-opacity=".5" stroke="none"/>',
+ heart:'<path d="M24 42C8 30 5 20 9 13c4-6 12-5 15 2 3-7 11-8 15-2 4 7 1 17-15 29z"/>',
+ house:'<path d="M5 24L24 7l19 17h-6v17h-9V30h-8v11h-9V24z"/>',
+ mail:'<rect x="5" y="11" width="38" height="27" rx="5"/><path d="M6 14l18 15 18-15" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>',
+ smile:'<circle cx="24" cy="24" r="19"/><circle cx="17" cy="20" r="2.4" fill="#fff" stroke="none"/><circle cx="31" cy="20" r="2.4" fill="#fff" stroke="none"/><path d="M15 29q9 9 18 0" fill="none" stroke="#fff" stroke-width="2.8" stroke-linecap="round"/>'};
+const ico=n=>'<svg class="ico" viewBox="0 0 64 64"><circle cx="32" cy="32" r="30" fill="url(#bd)" stroke="#f6b3c9" stroke-width="2"/>'+(n==='rose'?'<use href="#r1" x="9" y="9" width="46" height="46"/>':`<g transform="translate(14 14) scale(.75)" fill="url(#ig)" stroke="url(#ig)" stroke-width="2" stroke-linejoin="round">${IC[n]}</g>`)+'<path d="M13 26A20 20 0 0 1 29 12" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" opacity=".9"/></svg>';
+document.querySelectorAll('[data-i]').forEach(e=>e.outerHTML=ico(e.dataset.i));
+document.querySelectorAll('[data-div]').forEach(e=>{e.setAttribute('viewBox','0 0 170 22');e.innerHTML='<path d="M6 11H66M104 11H164" stroke="#d93f72" stroke-opacity=".45" stroke-linecap="round"/><use href="#r1" x="73" y="0" width="24" height="22"/>'});
+
+/* Cây anh đào + sóng */
+function tree(){
+  let sd=11;const R=()=>(sd=sd*16807%2147483647)/2147483647,PK=['#ffb7cf','#ffd1e0','#ff9bbd','#fff0f5'];let b='',t=[],c='';
+  (function g(x,y,a,l,w,d){const x2=x+Math.sin(a)*l,y2=y-Math.cos(a)*l;
+    b+=`<path d="M${x.toFixed(0)} ${y.toFixed(0)}Q${((x+x2)/2+(R()-.5)*l*.35).toFixed(0)} ${((y+y2)/2).toFixed(0)} ${x2.toFixed(0)} ${y2.toFixed(0)}" stroke-width="${w.toFixed(1)}"/>`;
+    if(d==0){t.push([x2,y2]);return}
+    const n=2+(R()>.55?1:0);for(let k=0;k<n;k++)g(x2,y2,a+(k-(n-1)/2)*.8+(R()-.5)*.35,l*(.74+R()*.1),w*.66,d-1);
+    if(d<3)t.push([x2,y2])})(200,700,0,135,17,5);
+  t.forEach(([x,y])=>{c+=`<g class="cb" style="transform-origin:${x.toFixed(0)}px ${y.toFixed(0)}px;animation-delay:-${(x/460*5+3).toFixed(2)}s">`;for(let j=0;j<4;j++)c+=`<circle cx="${(x+(R()-.5)*30).toFixed(0)}" cy="${(y+(R()-.5)*26).toFixed(0)}" r="${(8+R()*8).toFixed(0)}" fill="${PK[R()*4|0]}" fill-opacity=".82"/>`;c+='</g>'});
+  return `<defs><radialGradient id="sg"><stop offset="0" stop-color="#fffbe0"/><stop offset="1" stop-color="#fffbe0" stop-opacity="0"/></radialGradient></defs><circle cx="340" cy="120" r="95" fill="url(#sg)"/><circle cx="340" cy="120" r="34" fill="#fff6d6"/><g class="sway"><g fill="none" stroke="#6a3b44" stroke-linecap="round">${b}</g>${c}</g>`;
+}
+$('#tree').innerHTML=tree();
+const wp=a=>{let d='M0 100';for(let k=0;k<8;k++)d+=`Q${k*360+180} ${100+(k%2?a:-a)} ${k*360+360} 100`;return d+'V200H0Z'};
+$('.end').insertAdjacentHTML('beforeend',[['w1',30,'#ffc2d6',.6],['w2',24,'#ff9fc0',.6],['w3',18,'#f0508a',.5]].map(([k,a,f,o])=>`<svg class="wv ${k}" viewBox="0 0 2880 200" preserveAspectRatio="none"><path d="${wp(a)}" fill="${f}" fill-opacity="${o}"/></svg>`).join(''));
+
+/* Cánh hoa rơi liên tục */
+const cv=$('#fx'),cx=cv.getContext('2d');let W,H,P=[],T=0,end=0;
+function rs(){const d=devicePixelRatio||1;W=innerWidth;H=innerHeight;cv.width=W*d;cv.height=H*d;cx.setTransform(d,0,0,d,0,0)}rs();addEventListener('resize',rs);
+const PC=['#ff93b3','#ffb3c8','#ff7a9f','#ffd1de','#fff0f4','#f9708f'];
+function pet(x,y,b){const c=PC[rnd()*6|0],z=.55+rnd()*.85;
+  return{x,y,z,s:(10+rnd()*8)*z,r:rnd()*6.28,vr:(rnd()-.5)*.03,t:rnd()*6.28,vt:.025+rnd()*.04,ph:rnd()*6.28,b,
+  vx:b?(rnd()-.5)*10:0,vy:b?-rnd()*8-2:0,dk:mix(c,'#8a1840',.35),c,lt:mix(c,'#ffffff',.45),ul:mix(c,'#ffffff',.7)}}
+for(let i=0;i<Math.min(46,W/14|0);i++)P.push(pet(rnd()*W,rnd()*H,0));
+function burst(x,y){for(let i=0;i<28;i++)P.push(pet(x,y,1))}
+function draw(p){
+  const cs=Math.cos(p.t),s=p.s,back=cs<0;
+  cx.save();cx.translate(p.x,p.y);cx.rotate(p.r);cx.scale(.25+.75*Math.abs(cs),.9+.1*Math.sin(p.t*.7));
+  cx.globalAlpha=.55+.4*(p.z-.55)/.85;cx.shadowColor='rgba(150,40,80,.3)';cx.shadowBlur=6*p.z;cx.shadowOffsetY=3*p.z;
+  const g=cx.createLinearGradient(0,s,0,-s);g.addColorStop(0,back?p.lt:p.dk);g.addColorStop(.5,back?p.ul:p.c);g.addColorStop(1,back?p.ul:p.lt);
+  cx.fillStyle=g;cx.beginPath();cx.moveTo(0,s);cx.bezierCurveTo(s,s*.5,s*1.1,-s*.7,s*.25,-s*.95);cx.quadraticCurveTo(0,-s*.78,-s*.25,-s*.95);cx.bezierCurveTo(-s*1.1,-s*.7,-s,s*.5,0,s);cx.fill();
+  cx.shadowColor='transparent';cx.strokeStyle='rgba(255,255,255,.4)';cx.lineWidth=1;cx.stroke();
+  cx.strokeStyle='rgba(120,20,60,.16)';cx.beginPath();cx.moveTo(0,s*.9);cx.quadraticCurveTo(s*.1,0,0,-s*.5);cx.stroke();cx.restore();
+}
+(function loop(){T++;cx.clearRect(0,0,W,H);
+  const wind=Math.sin(T*.004)*.35+.3+(end?Math.sin(T*.02)*.9+1:0);
+  if(end&&T%4==0&&P.length<320){const p=pet(W*.15+rnd()*W*.7,H*.3+rnd()*H*.2,1);p.vx=wind;p.vy=.3;P.push(p)}
+  P=P.filter(p=>{p.t+=p.vt;p.ph+=.02;p.r+=p.vr+Math.cos(p.ph)*.012;
+    const base=(.7+p.z*.8)*(1.1-.55*Math.abs(Math.cos(p.t)));
+    if(p.b){p.vx*=.96;p.vy=p.vy*.96+base*.04;p.x+=p.vx+wind;p.y+=p.vy+Math.sin(p.ph)*.4;if(p.y>H+30||p.x>W+60)return false}
+    else{p.y+=base;p.x+=wind*p.z*1.3+Math.sin(p.ph)*.9;if(p.y>H+30){p.y=-30;p.x=rnd()*W}if(p.x>W+40)p.x=-30}
+    draw(p);return true});
+  requestAnimationFrame(loop)})();
+
+/* Nhạc chill lo-fi tạo bằng Web Audio */
+let AC,mg,NB,on=1;
+const MB=60/74,hz=m=>440*Math.pow(2,(m-69)/12),CH=[[48,55,59,64],[45,52,55,60],[41,48,52,57],[43,50,53,59]],PEN=[72,74,76,79,81,84];
+function nt(f,t,d,v,ty){const o=AC.createOscillator(),g=AC.createGain();o.type=ty;o.frequency.value=f;g.gain.setValueAtTime(.0001,t);g.gain.linearRampToValueAtTime(v,t+.04);g.gain.exponentialRampToValueAtTime(.0001,t+d);o.connect(g);g.connect(mg);o.start(t);o.stop(t+d+.1)}
+function kick(t){const o=AC.createOscillator(),g=AC.createGain();o.frequency.setValueAtTime(120,t);o.frequency.exponentialRampToValueAtTime(40,t+.15);g.gain.setValueAtTime(.2,t);g.gain.exponentialRampToValueAtTime(.0001,t+.3);o.connect(g);g.connect(mg);o.start(t);o.stop(t+.35)}
+function hat(t){const s=AC.createBufferSource(),f=AC.createBiquadFilter(),g=AC.createGain();s.buffer=NB;f.type='highpass';f.frequency.value=7000;g.gain.setValueAtTime(.025,t);g.gain.exponentialRampToValueAtTime(.0001,t+.06);s.connect(f);f.connect(g);g.connect(mg);s.start(t)}
+function bar(t,i){
+  const c=CH[i%4];
+  c.forEach((m,k)=>{nt(hz(m),t+k*.015,MB*4,.06,'triangle');nt(hz(m)*1.004,t,MB*4,.03,'sine')});
+  for(let k=0;k<8;k++)nt(hz(c[k%4]+12),t+k*MB/2+(k%2?.02:0),MB*1.4,.045,'sine');
+  for(let k=0,n=2+(rnd()*3|0);k<n;k++)nt(hz(PEN[rnd()*6|0]),t+(rnd()*7|0)*MB/2,MB*2.2,.055,'sine');
+  [0,2].forEach(k=>kick(t+k*MB));[.5,1.5,2.5,3.5].forEach(k=>hat(t+k*MB));
+  setTimeout(()=>bar(t+MB*4,i+1),Math.max(0,(t+MB*4-AC.currentTime-1)*1000));
+}
+function music(){
+  AC=new(window.AudioContext||window.webkitAudioContext)();mg=AC.createGain();mg.gain.value=0;
+  const lp=AC.createBiquadFilter(),dl=AC.createDelay(),fb=AC.createGain(),wet=AC.createGain();
+  lp.type='lowpass';lp.frequency.value=2200;dl.delayTime.value=.41;fb.gain.value=.38;wet.gain.value=.3;
+  mg.connect(lp);lp.connect(AC.destination);lp.connect(dl);dl.connect(fb);fb.connect(dl);dl.connect(wet);wet.connect(AC.destination);
+  NB=AC.createBuffer(1,AC.sampleRate*.1,AC.sampleRate);const d=NB.getChannelData(0);for(let i=0;i<d.length;i++)d[i]=rnd()*2-1;
+  mg.gain.linearRampToValueAtTime(.55,AC.currentTime+4);bar(AC.currentTime+.1,0);
+}
+$('#mu').onclick=()=>{on=!on;$('#mu').classList.toggle('off',!on);mg.gain.setTargetAtTime(on?.55:0,AC.currentTime,.3)};
+
+/* Luồng chính, tự chuyển trang sau 10 giây */
+let N='',cur=0,run=0,tm;const S=[...document.querySelectorAll('.slide')],LAST=S.length-1;
+const dots=$('#dots');S.forEach(()=>dots.appendChild(document.createElement('i')));
+function show(id){document.querySelectorAll('.screen,#deck,#nav').forEach(e=>e.classList.remove('show'));[].concat(id).forEach(i=>$(i).classList.add('show'))}
+function arm(){clearTimeout(tm);const b=$('#bar');b.classList.remove('run');void b.offsetWidth;if(cur<LAST){b.classList.add('run');tm=setTimeout(()=>go(cur+1),10000)}}
+function start(){
+  const v=$('#nm').value.trim();
+  if(!v){const i=$('#nm');i.classList.remove('bad');void i.offsetWidth;i.classList.add('bad');i.focus();return}
+  N=v;document.querySelectorAll('.nm').forEach(e=>e.textContent=N);
+  try{if(!AC)music();$('#mu').classList.add('show')}catch(e){}
+  show('#load');const m=['Đang gói quà cho '+N+'…','Đang hái những bông hồng đẹp nhất…','Sắp xong rồi…'];let k=0;$('#lt').textContent=m[0];
+  const t=setInterval(()=>{$('#lt').textContent=m[++k%3]},900);
+  setTimeout(()=>{clearInterval(t);show(['#deck','#nav']);go(0)},2700);
+}
+$('#go').onclick=start;$('#nm').onkeydown=e=>{if(e.key==='Enter')start()};
+function go(i){
+  i=Math.max(0,Math.min(LAST,i));cur=i;run++;end=i===LAST;
+  S.forEach((s,k)=>s.classList.toggle('active',k===i));
+  [...dots.children].forEach((d,k)=>d.classList.toggle('on',k===i));
+  $('#pv').disabled=i===0;$('#nx').disabled=i===LAST;
+  if(i===6)type(run);
+  if(i===7){const r=run;setTimeout(()=>{if(r===run)burst(innerWidth/2,innerHeight*.55)},900)}
+  arm();
+}
+$('#pv').onclick=()=>go(cur-1);$('#nx').onclick=()=>go(cur+1);
+addEventListener('keydown',e=>{if(!$('#deck').classList.contains('show'))return;if(e.key==='ArrowRight')go(cur+1);if(e.key==='ArrowLeft')go(cur-1)});
+let sx=0;addEventListener('touchstart',e=>sx=e.touches[0].clientX,{passive:true});
+addEventListener('touchend',e=>{if(!$('#deck').classList.contains('show'))return;const d=e.changedTouches[0].clientX-sx;if(Math.abs(d)>60)go(cur+(d<0?1:-1))});
+[S[7],S[LAST]].forEach(s=>s.addEventListener('click',e=>{if(!e.target.closest('button'))burst(e.clientX,e.clientY)}));
+$('#again').onclick=()=>go(0);
+$('#other').onclick=()=>{clearTimeout(tm);end=0;run++;$('#bar').classList.remove('run');$('#nm').value='';show('#intro');$('#nm').focus()};
+
+/* Lời chúc chạy chữ, giọng như người thật đang nói chuyện */
+const sleep=ms=>new Promise(r=>setTimeout(r,ms));
+async function type(id){
+  const w=$('#wish');w.innerHTML='';
+  const L=[`Này ${N}, hôm nay là 20/10 đó. Mình muốn dừng lại một chút để nói với bạn vài lời thật lòng.`,
+  'Cảm ơn bạn vì những lần lặng lẽ cố gắng mà chẳng kể với ai. Mình thấy hết, và mình biết chẳng dễ dàng gì.',
+  'Nếu hôm nay bạn mệt, cứ nghỉ một chút nhé. Pha tách trà, nghe một bản nhạc êm, mọi thứ chờ đến mai cũng được.',
+  'Mong bạn được yêu thương dịu dàng, cười nhiều hơn lo, và luôn thấy mình xứng đáng với điều tốt đẹp.',
+  `20/10 vui thật vui nhé, ${N}. Có bạn ở đây, thế giới này đẹp hơn một chút.`];
+  await sleep(900);
+  for(const t of L){
+    if(id!==run)return;
+    const p=document.createElement('p');p.className='caret';w.appendChild(p);
+    for(const ch of t){if(id!==run)return;p.textContent+=ch;await sleep(11)}
+    p.classList.remove('caret');await sleep(300);
+  }
+}
+</script>
+</body>
+</html>
