@@ -366,7 +366,7 @@ function start(){
   if(!v){const i=$('#nm');i.classList.remove('bad');void i.offsetWidth;i.classList.add('bad');i.focus();return}
   N=v;document.querySelectorAll('.nm').forEach(e=>e.textContent=N);
   try{if(!AC)music();$('#mu').classList.add('show')}catch(e){}
-  show('#load');const m=['Đang gói quà cho '+N+'…','Đang hái những bông hồng đẹp nhất…','Sắp xong rồi…'];let k=0;$('#lt').textContent=m[0];
+  show('#load');const m=['Chờ chút nhé... '+N+'…','Đang hái những bông hồng đẹp nhất…','Sắp xong rồi…'];let k=0;$('#lt').textContent=m[0];
   const t=setInterval(()=>{$('#lt').textContent=m[++k%3]},900);
   setTimeout(()=>{clearInterval(t);show(['#deck','#nav']);go(0)},2700);
 }
